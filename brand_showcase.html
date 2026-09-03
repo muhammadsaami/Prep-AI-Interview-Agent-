@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PrepAI — Brand Identity & Logo Suite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark-navy: #06183D;
+      --deep-blue: #1737D8;
+      --electric-blue: #168BFF;
+      --vibrant-purple: #6924FF;
+      --cyan: #20C8FF;
+      --slate-50: #F8FAFC;
+      --slate-100: #F1F5F9;
+      --slate-200: #E2E8F0;
+      --slate-700: #334155;
+      --slate-900: #0F172A;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--slate-50);
+      color: var(--slate-900);
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    header {
+      background: var(--dark-navy);
+      color: #ffffff;
+      padding: 48px 24px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(6, 24, 61, 0.2);
+    }
+
+    header h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #FFFFFF 0%, #20C8FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #94A3B8;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .badge-bar {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #E2E8F0;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--dark-navy);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 28px;
+      background: linear-gradient(to bottom, var(--cyan), var(--vibrant-purple));
+      border-radius: 4px;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 32px;
+      margin-bottom: 56px;
+    }
+
+    .logo-card {
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid var(--slate-200);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(22, 139, 255, 0.1);
+    }
+
+    .logo-card.dark-card {
+      background: var(--dark-navy);
+      border-color: #1E293B;
+    }
+
+    .card-preview {
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      position: relative;
+    }
+
+    .card-preview.transparent-pattern {
+      background-color: #f8fafc;
+      background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+      background-size: 16px 16px;
+    }
+
+    .card-preview img, .card-preview svg {
+      max-width: 85%;
+      max-height: 85%;
+      object-fit: contain;
+    }
+
+    .card-info {
+      padding: 24px;
+      border-top: 1px solid var(--slate-200);
+      background: #ffffff;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .dark-card .card-info {
+      background: #0B1936;
+      border-top-color: #1E293B;
+    }
+
+    .card-info h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--dark-navy);
+      margin-bottom: 6px;
+    }
+
+    .dark-card .card-info h3 {
+      color: #ffffff;
+    }
+
+    .card-info p {
+      font-size: 0.9rem;
+      color: #64748B;
+      margin-bottom: 16px;
+    }
+
+    .dark-card .card-info p {
+      color: #94A3B8;
+    }
+
+    .asset-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--deep-blue) 0%, var(--vibrant-purple) 100%);
+      color: #ffffff;
+      border: none;
+      box-shadow: 0 4px 12px rgba(105, 36, 255, 0.25);
+    }
+
+    .btn-primary:hover {
+      opacity: 0.92;
+      box-shadow: 0 6px 18px rgba(105, 36, 255, 0.4);
+    }
+
+    .btn-secondary {
+      background: var(--slate-100);
+      color: var(--slate-700);
+      border: 1px solid var(--slate-200);
+    }
+
+    .btn-secondary:hover {
+      background: var(--slate-200);
+    }
+
+    .dark-card .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: #E2E8F0;
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 56px;
+    }
+
+    .color-swatch {
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid var(--slate-200);
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    }
+
+    .color-preview {
+      height: 100px;
+      width: 100%;
+    }
+
+    .color-details {
+      padding: 16px;
+    }
+
+    .color-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+
+    .color-hex {
+      font-family: monospace;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: #64748B;
+    }
+
+    .footer {
+      text-align: center;
+      color: #64748B;
+      font-size: 0.9rem;
+      padding-top: 40px;
+      border-top: 1px solid var(--slate-200);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PrepAI Brand Identity</h1>
+    <p>Official YC-style AI SaaS logo suite & brand guidelines for PrepAI</p>
+    <div class="badge-bar">
+      <span class="badge">✦ Production Vector SVGs</span>
+      <span class="badge">✦ Ultra High-Res 2400px PNGs</span>
+      <span class="badge">✦ Dark & Light Variations</span>
+      <span class="badge">✦ Chat AI & Edu Cap Geometry</span>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <h2 class="section-title">Logo Variations</h2>
+
+    <div class="logo-grid">
+
+      <!-- 1. FULL LOGO -->
+      <div class="logo-card">
+        <div class="card-preview">
+          <img src="assets/logo/prep_ai_logo_full.svg" alt="PrepAI Full Logo" />
+        </div>
+        <div class="card-info">
+          <div>
+            <h3>1. Full Logo (Stacked)</h3>
+            <p>Primary stacked brand identity for hero headers, pitch decks, landing pages, and official marketing.</p>
+          </div>
+          <div class="asset-actions">
+            <a href="assets/logo/prep_ai_logo_full.svg" download class="btn btn-primary">Download SVG</a>
+            <a href="assets/logo/prep_ai_logo_full.png" download class="btn btn-secondary">Download PNG</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. ICON ONLY -->
+      <div class="logo-card">
+        <div class="card-preview">
+          <img src="assets/logo/prep_ai_logo_icon.svg" style="max-height: 70%;" alt="PrepAI Icon" />
+        </div>
+        <div class="card-info">
+          <div>
+            <h3>2. Standalone Icon</h3>
+            <p>App favicon, mobile app icon, avatar, social media profile, and clean UI navigation mark.</p>
+          </div>
+          <div class="asset-actions">
+            <a href="assets/logo/prep_ai_logo_icon.svg" download class="btn btn-primary">Download SVG</a>
+            <a href="assets/logo/prep_ai_logo_icon.png" download class="btn btn-secondary">Download PNG</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. HORIZONTAL LOGO -->
+      <div class="logo-card">
+        <div class="card-preview">
+          <img src="assets/logo/prep_ai_logo_horizontal.svg" alt="PrepAI Horizontal Logo" />
+        </div>
+        <div class="card-info">
+          <div>
+            <h3>3. Horizontal Logo</h3>
+            <p>Optimized for web app navigation bars, header banners, email signatures, and wide layouts.</p>
+          </div>
+          <div class="asset-actions">
+            <a href="assets/logo/prep_ai_logo_horizontal.svg" download class="btn btn-primary">Download SVG</a>
+            <a href="assets/logo/prep_ai_logo_horizontal.png" download class="btn btn-secondary">Download PNG</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. DARK MODE LOGO -->
+      <div class="logo-card dark-card">
+        <div class="card-preview">
+          <img src="assets/logo/prep_ai_logo_dark.svg" alt="PrepAI Dark Mode Logo" />
+        </div>
+        <div class="card-info">
+          <div>
+            <h3>4. Dark Mode Logo</h3>
+            <p>Designed for dark dashboards, night mode web interfaces, developer docs, and dark backdrops.</p>
+          </div>
+          <div class="asset-actions">
+            <a href="assets/logo/prep_ai_logo_dark.svg" download class="btn btn-primary">Download SVG</a>
+            <a href="assets/logo/prep_ai_logo_dark.png" download class="btn btn-secondary">Download PNG</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. TRANSPARENT BACKGROUND -->
+      <div class="logo-card">
+        <div class="card-preview transparent-pattern">
+          <img src="assets/logo/prep_ai_logo_transparent.svg" alt="PrepAI Transparent Logo" />
+        </div>
+        <div class="card-info">
+          <div>
+            <h3>5. Transparent Background</h3>
+            <p>Resolution-independent vector graphic with zero background for placement on any surface or background.</p>
+          </div>
+          <div class="asset-actions">
+            <a href="assets/logo/prep_ai_logo_transparent.svg" download class="btn btn-primary">Download SVG</a>
+            <a href="assets/logo/prep_ai_logo_transparent.png" download class="btn btn-secondary">Download PNG</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COLOR PALETTE SECTION -->
+    <h2 class="section-title">Brand Color Palette</h2>
+    <div class="palette-grid">
+      <div class="color-swatch">
+        <div class="color-preview" style="background: #06183D;"></div>
+        <div class="color-details">
+          <div class="color-name">Dark Navy</div>
+          <div class="color-hex">#06183D</div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-preview" style="background: #1737D8;"></div>
+        <div class="color-details">
+          <div class="color-name">Deep Blue</div>
+          <div class="color-hex">#1737D8</div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-preview" style="background: #168BFF;"></div>
+        <div class="color-details">
+          <div class="color-name">Electric Blue</div>
+          <div class="color-hex">#168BFF</div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-preview" style="background: #6924FF;"></div>
+        <div class="color-details">
+          <div class="color-name">Vibrant Purple</div>
+          <div class="color-hex">#6924FF</div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-preview" style="background: #20C8FF;"></div>
+        <div class="color-details">
+          <div class="color-name">Cyan</div>
+          <div class="color-hex">#20C8FF</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© PrepAI Inc. All production logo assets & SVGs prepared in compliance with startup design specs.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

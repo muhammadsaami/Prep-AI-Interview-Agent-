@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Color Gradients -->
+    <!-- Cap Top Gradient: Cyan -> Electric Blue -> Vibrant Purple -->
+    <linearGradient id="capTopGrad" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#20C8FF" />
+      <stop offset="45%" stop-color="#168BFF" />
+      <stop offset="85%" stop-color="#6924FF" />
+      <stop offset="100%" stop-color="#1737D8" />
+    </linearGradient>
+
+    <!-- Cap Band & Skull Gradient -->
+    <linearGradient id="capBandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#168BFF" />
+      <stop offset="60%" stop-color="#6924FF" />
+      <stop offset="100%" stop-color="#06183D" />
+    </linearGradient>
+
+    <!-- Tassel Gradient -->
+    <linearGradient id="tasselGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6924FF" />
+      <stop offset="100%" stop-color="#1737D8" />
+    </linearGradient>
+
+    <!-- P Ribbon Outer Gradient: Flowing cyan at top left stem, blue in mid, purple at loop -->
+    <linearGradient id="pRibbonGrad" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#20C8FF" />
+      <stop offset="30%" stop-color="#168BFF" />
+      <stop offset="70%" stop-color="#6924FF" />
+      <stop offset="100%" stop-color="#1737D8" />
+    </linearGradient>
+
+    <!-- P Loop Overlay Gradient for 3D ribbon effect -->
+    <linearGradient id="pLoopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#20C8FF" />
+      <stop offset="40%" stop-color="#168BFF" />
+      <stop offset="80%" stop-color="#6924FF" />
+    </linearGradient>
+
+    <!-- Ribbon Fold Shadow for subtle realistic depth -->
+    <linearGradient id="pFoldShadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06183D" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#06183D" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Wordmark "AI" Gradient -->
+    <linearGradient id="aiWordmarkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6924FF" />
+      <stop offset="50%" stop-color="#168BFF" />
+      <stop offset="100%" stop-color="#20C8FF" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow Filter for Icon -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#06183D" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- ICON GROUP -->
+  <g id="logo-icon" filter="url(#softShadow)">
+    
+    <!-- P-ICON BACK RIBBON / MAIN BODY -->
+    <!-- Smooth P loop stem & outer ribbon envelope -->
+    <path id="p-outer-body" d="
+      M 232, 138 
+      C 275, 138  345, 155  345, 218 
+      C 345, 275  285, 298  235, 298 
+      C 220, 298  205, 292  195, 282 
+      L 195, 318 
+      C 195, 335  208, 348  225, 348 
+      C 242, 348  255, 335  255, 318 
+      L 255, 292 
+      C 292, 288  375, 268  375, 215 
+      C 375, 142  282, 112  220, 112 
+      C 195, 112  175, 125  175, 152 
+      L 175, 318 
+      C 175, 345  198, 368  225, 368 
+      C 252, 368  275, 345  275, 318 
+      L 275, 285 
+      Z" 
+      fill="url(#pRibbonGrad)" />
+
+    <!-- REFINED P-ICON RIBBON (3D Overlapping Fluid Ribbon Path) -->
+    <!-- Main Left Stem -->
+    <path d="
+      M 205, 125 
+      L 205, 315 
+      C 205, 332  218, 345  235, 345 
+      C 252, 345  265, 332  265, 315 
+      L 265, 255 
+      C 295, 255  345, 245  345, 198 
+      C 345, 152  295, 125  235, 125 
+      Z" 
+      fill="url(#pRibbonGrad)" />
+
+    <!-- Ribbon Fold Depth Overlay -->
+    <path d="
+      M 205, 240 
+      C 225, 260  265, 265  285, 255 
+      C 265, 280  225, 290  205, 315 
+      Z" 
+      fill="url(#pFoldShadow)" />
+
+    <!-- Outer Bowl Sweep (Vibrant Blue/Purple Loop) -->
+    <path d="
+      M 235, 125 
+      C 295, 125  355, 150  355, 198 
+      C 355, 248  295, 272  245, 272 
+      C 225, 272  210, 265  205, 255 
+      C 215, 275  235, 288  260, 288 
+      C 315, 288  378, 255  378, 198 
+      C 378, 138  305, 105  235, 105 
+      C 210, 105  195, 115  190, 128 
+      C 200, 126  218, 125  235, 125 
+      Z" 
+      fill="url(#pLoopGrad)" />
+
+    <!-- INNER CHAT BUBBLE COUNTER (White AI Conversation Bubble) -->
+    <!-- Speech bubble body with tail -->
+    <path id="chat-bubble" d="
+      M 240, 152 
+      C 268, 152  298, 162  298, 190 
+      C 298, 218  268, 228  240, 228 
+      C 232, 228  225, 226  218, 222 
+      L 206, 234 
+      L 210, 218 
+      C 202, 211  198, 201  198, 190 
+      C 198, 162  218, 152  240, 152 
+      Z" 
+      fill="#FFFFFF" />
+
+    <!-- THREE AI CONVERSATION DOTS inside the Speech Bubble -->
+    <circle cx="230" cy="190" r="7" fill="#1737D8" />
+    <circle cx="248" cy="190" r="7" fill="#1737D8" />
+    <circle cx="266" cy="190" r="7" fill="#1737D8" />
+
+    <!-- GRADUATION CAP (Integrated at Top of P) -->
+    <!-- Skull Cap Base Band sitting snug on top of P curve -->
+    <path id="cap-skull-base" d="
+      M 190, 114 
+      C 190, 114  248, 140  306, 114 
+      C 306, 128  282, 146  248, 146 
+      C 214, 146  190, 128  190, 114 
+      Z" 
+      fill="url(#capBandGrad)" />
+
+    <!-- Mortarboard Top (Diamond Rhombus) -->
+    <path id="mortarboard-top" d="
+      M 248, 52 
+      L 348, 92 
+      L 248, 128 
+      L 148, 92 
+      Z" 
+      fill="url(#capTopGrad)" />
+
+    <!-- Mortarboard Under-lip Highlight Curve -->
+    <path d="
+      M 148, 92 
+      L 248, 128 
+      L 348, 92 
+      L 348, 96 
+      L 248, 132 
+      L 148, 96 
+      Z" 
+      fill="#102A72" opacity="0.4" />
+
+    <!-- Tassel Center Button -->
+    <circle cx="248" cy="90" r="7" fill="#20C8FF" />
+    <circle cx="248" cy="90" r="4.5" fill="#168BFF" />
+
+    <!-- Tassel Cord -->
+    <path d="
+      M 248, 90 
+      C 285, 90  324, 102  332, 122" 
+      stroke="#168BFF" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Tassel Ring & Body -->
+    <circle cx="332" cy="125" r="4" fill="#6924FF" />
+    <path d="
+      M 327, 128 
+      L 337, 128 
+      L 340, 162 
+      C 340, 165  324, 165  324, 162 
+      Z" 
+      fill="url(#tasselGrad)" />
+
+  </g>
+
+  <!-- WORDMARK: "PrepAI" -->
+  <g id="wordmark" transform="translate(0, 440)">
+    <!-- "Prep" in Solid Dark Navy (#06183D) -->
+    <text x="300" y="0" text-anchor="middle" font-family="system-ui, -apple-system, 'Inter', 'Outfit', 'Montserrat', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="88" letter-spacing="-1.5">
+      <tspan fill="#06183D">Prep</tspan><tspan fill="url(#aiWordmarkGrad)">AI</tspan>
+    </text>
+
+    <!-- TAGLINE: "P R A C T I C E   •   P R E P A R E   •   P E R F O R M" -->
+    <text x="300" y="52" text-anchor="middle" font-family="system-ui, -apple-system, 'Inter', 'Outfit', 'Montserrat', sans-serif" font-weight="600" font-size="15" letter-spacing="7" fill="#06183D" opacity="0.85">
+      PRACTICE <tspan fill="#6924FF" font-size="18">•</tspan> PREPARE <tspan fill="#168BFF" font-size="18">•</tspan> PERFORM
+    </text>
+  </g>
+</svg>

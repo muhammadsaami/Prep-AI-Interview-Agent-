@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+langgraph
+groq
+sqlalchemy
+psycopg2-binary
+pdfplumber
+python-multipart
+websockets
+python-dotenv

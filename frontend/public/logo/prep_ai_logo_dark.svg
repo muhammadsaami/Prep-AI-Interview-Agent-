@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" width="100%" height="100%" fill="none">
+  <!-- DARK BACKGROUND CONTAINER -->
+  <rect width="600" height="620" rx="0" fill="#06183D" />
+
+  <defs>
+    <!-- Dark Mode Color Gradients -->
+    <linearGradient id="capTopGradDark" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#20C8FF" />
+      <stop offset="45%" stop-color="#168BFF" />
+      <stop offset="85%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+
+    <linearGradient id="capBandGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="60%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="tasselGradDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <linearGradient id="pRibbonGradDark" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="30%" stop-color="#2563EB" />
+      <stop offset="70%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+
+    <linearGradient id="pLoopGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="40%" stop-color="#2563EB" />
+      <stop offset="80%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <linearGradient id="pFoldShadowDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="aiWordmarkGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#20C8FF" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter for Dark Mode -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#38BDF8" flood-opacity="0.3" />
+      <feDropShadow dx="0" dy="8" stdDeviation="24" flood-color="#8B5CF6" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- ICON GROUP WITH NEON GLOW -->
+  <g id="logo-icon-dark" filter="url(#neonGlow)">
+    
+    <!-- P-ICON BACK RIBBON -->
+    <path d="
+      M 205, 125 
+      L 205, 315 
+      C 205, 332  218, 345  235, 345 
+      C 252, 345  265, 332  265, 315 
+      L 265, 255 
+      C 295, 255  345, 245  345, 198 
+      C 345, 152  295, 125  235, 125 
+      Z" 
+      fill="url(#pRibbonGradDark)" />
+
+    <!-- Ribbon Fold Depth Overlay -->
+    <path d="
+      M 205, 240 
+      C 225, 260  265, 265  285, 255 
+      C 265, 280  225, 290  205, 315 
+      Z" 
+      fill="url(#pFoldShadowDark)" />
+
+    <!-- Outer Bowl Sweep -->
+    <path d="
+      M 235, 125 
+      C 295, 125  355, 150  355, 198 
+      C 355, 248  295, 272  245, 272 
+      C 225, 272  210, 265  205, 255 
+      C 215, 275  235, 288  260, 288 
+      C 315, 288  378, 255  378, 198 
+      C 378, 138  305, 105  235, 105 
+      C 210, 105  195, 115  190, 128 
+      C 200, 126  218, 125  235, 125 
+      Z" 
+      fill="url(#pLoopGradDark)" />
+
+    <!-- INNER CHAT BUBBLE COUNTER -->
+    <path d="
+      M 240, 152 
+      C 268, 152  298, 162  298, 190 
+      C 298, 218  268, 228  240, 228 
+      C 232, 228  225, 226  218, 222 
+      L 206, 234 
+      L 210, 218 
+      C 202, 211  198, 201  198, 190 
+      C 198, 162  218, 152  240, 152 
+      Z" 
+      fill="#FFFFFF" />
+
+    <!-- THREE AI CONVERSATION DOTS -->
+    <circle cx="230" cy="190" r="7" fill="#0F172A" />
+    <circle cx="248" cy="190" r="7" fill="#0F172A" />
+    <circle cx="266" cy="190" r="7" fill="#0F172A" />
+
+    <!-- GRADUATION CAP -->
+    <path d="
+      M 190, 114 
+      C 190, 114  248, 140  306, 114 
+      C 306, 128  282, 146  248, 146 
+      C 214, 146  190, 128  190, 114 
+      Z" 
+      fill="url(#capBandGradDark)" />
+
+    <path d="
+      M 248, 52 
+      L 348, 92 
+      L 248, 128 
+      L 148, 92 
+      Z" 
+      fill="url(#capTopGradDark)" />
+
+    <path d="
+      M 148, 92 
+      L 248, 128 
+      L 348, 92 
+      L 348, 96 
+      L 248, 132 
+      L 148, 96 
+      Z" 
+      fill="#0B132B" opacity="0.5" />
+
+    <circle cx="248" cy="90" r="7" fill="#38BDF8" />
+    <circle cx="248" cy="90" r="4.5" fill="#2563EB" />
+
+    <path d="
+      M 248, 90 
+      C 285, 90  324, 102  332, 122" 
+      stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <circle cx="332" cy="125" r="4" fill="#A855F7" />
+    <path d="
+      M 327, 128 
+      L 337, 128 
+      L 340, 162 
+      C 340, 165  324, 165  324, 162 
+      Z" 
+      fill="url(#tasselGradDark)" />
+
+  </g>
+
+  <!-- WORDMARK & TAGLINE -->
+  <g id="wordmark-dark" transform="translate(0, 440)">
+    <!-- "Prep" in White (#FFFFFF), "AI" in Vibrant Gradient -->
+    <text x="300" y="0" text-anchor="middle" font-family="system-ui, -apple-system, 'Inter', 'Outfit', 'Montserrat', sans-serif" font-weight="800" font-size="88" letter-spacing="-1.5">
+      <tspan fill="#FFFFFF">Prep</tspan><tspan fill="url(#aiWordmarkGradDark)">AI</tspan>
+    </text>
+
+    <!-- TAGLINE -->
+    <text x="300" y="52" text-anchor="middle" font-family="system-ui, -apple-system, 'Inter', 'Outfit', 'Montserrat', sans-serif" font-weight="600" font-size="15" letter-spacing="7" fill="#94A3B8">
+      PRACTICE <tspan fill="#A855F7" font-size="18">•</tspan> PREPARE <tspan fill="#38BDF8" font-size="18">•</tspan> PERFORM
+    </text>
+  </g>
+</svg>
