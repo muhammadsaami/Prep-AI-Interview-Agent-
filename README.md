@@ -3,8 +3,6 @@
 
 PrepAI is an AI-powered mock interview platform that generates personalized interview questions from your resume, conducts a realistic voice/text interview, reacts to your actual answers in real time, and produces a detailed scored feedback report at the end.
 
-![PrepAI Landing Page](./screenshots/landing-page.png)
-
 ## Features
 
 - **Resume-based question generation** — upload your resume and target role; PrepAI generates tailored technical, behavioral, and resume-specific questions using Groq (`openai/gpt-oss-120b`).
